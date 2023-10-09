@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CoExpense" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorControlNormal">@color/sky</item>
+        <item name="colorControlActivated">#5CB8E4</item>
+        <item name="colorControlHighlight">#8758FF</item>
+    </style>
+
+    <style name="Theme.CoExpense" parent="Base.Theme.CoExpense" />
+</resources>

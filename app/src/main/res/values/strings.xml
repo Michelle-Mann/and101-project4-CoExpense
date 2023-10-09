@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CoExpense</string>
+    <string name="rent_title">Rent 🏡: </string>
+    <string name="electric_title">Electric 💡: </string>
+    <string name="utilities_title">Utilities 💧: </string>
+    <string name="cable_title">Cable + Internet 📡: </string>
+    <string name="apartment_title">Other Fees 🐈 📦: </string>
+    <string name="subscription_title">Subscriptions 🎦: </string>
+    <string name="groceries_title">Groceries 🍎 🍞: </string>
+    <string name="misc_title">Misc. ➕: </string>
+
+    <string name="rent_hint">Enter Rent</string>
+    <string name="electric_hint">Enter Electric</string>
+    <string name="utilities_hint">Enter Utilities</string>
+    <string name="cable_hint">Enter Cable</string>
+    <string name="apartment_hint">Enter Fees</string>
+    <string name="subscription_hint">Enter Subscriptions</string>
+    <string name="groceries_hint">Enter Groceries</string>
+    <string name="misc_hint">Enter Misc.</string>
+
+    <string name="people"># of Housemates: </string>
+    <string name="money_zero">0.00</string>
+    <string name="zero">0</string>
+    <string name="calculate">Calculate!</string>
+    <string name="total_text">This month\'s total is: $</string>
+    <string name="per_person">Each person pays: $</string>
+</resources>

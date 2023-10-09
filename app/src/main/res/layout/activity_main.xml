@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/app_name"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/sky"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/people"
+        android:textSize="18sp"
+        android:textColor="@color/teal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/rent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/rent_title"
+        android:textSize="18sp"
+        android:textColor="@color/teal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/people" />
+
+    <TextView
+        android:id="@+id/electric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/electric_title"
+        android:textSize="18sp"
+        android:textColor="@color/teal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rent" />
+
+    <TextView
+        android:id="@+id/utilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/utilities_title"
+        android:textSize="18sp"
+        android:textColor="@color/teal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/electric" />
+
+    <TextView
+        android:id="@+id/cable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/cable_title"
+        android:textSize="18sp"
+        android:textColor="@color/teal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/utilities" />
+
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/apartment_title"
+        android:textSize="18sp"
+        android:textColor="@color/teal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cable" />
+
+    <TextView
+        android:id="@+id/subscriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/subscription_title"
+        android:textSize="18sp"
+        android:textColor="@color/teal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/other" />
+
+    <TextView
+        android:id="@+id/groceries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/groceries_title"
+        android:textSize="18sp"
+        android:textColor="@color/teal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subscriptions" />
+
+    <TextView
+        android:id="@+id/misc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/misc_title"
+        android:textSize="18sp"
+        android:textColor="@color/teal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/groceries" />
+
+    <EditText
+        android:id="@+id/numOfPpl"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="number"
+        android:text="@string/zero"
+        android:textSize="18sp"
+        android:textColor="@color/lt_gray"
+        android:textStyle="bold"
+        android:hint="@string/rent_hint"
+        app:layout_constraintTop_toTopOf="@id/people"
+        app:layout_constraintBottom_toBottomOf="@id/people"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextHintStyle"/>
+
+    <EditText
+        android:id="@+id/rentInput"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="numberDecimal"
+        android:text="@string/zero"
+        android:textSize="18sp"
+        android:textColor="@color/lt_gray"
+        android:textStyle="bold"
+        android:hint="@string/rent_hint"
+        app:layout_constraintTop_toTopOf="@id/rent"
+        app:layout_constraintBottom_toBottomOf="@id/rent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextHintStyle"/>
+
+    <EditText
+        android:id="@+id/electricInput"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="numberDecimal"
+        android:text="@string/zero"
+        android:textSize="18sp"
+        android:textColor="@color/lt_gray"
+        android:textStyle="bold"
+        android:hint="@string/electric_hint"
+        app:layout_constraintTop_toTopOf="@id/electric"
+        app:layout_constraintBottom_toBottomOf="@id/electric"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextHintStyle"/>
+
+    <EditText
+        android:id="@+id/utilitiesInput"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="numberDecimal"
+        android:text="@string/zero"
+        android:textSize="18sp"
+        android:textColor="@color/lt_gray"
+        android:textStyle="bold"
+        android:hint="@string/utilities_hint"
+        app:layout_constraintTop_toTopOf="@id/utilities"
+        app:layout_constraintBottom_toBottomOf="@id/utilities"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextHintStyle"/>
+
+    <EditText
+        android:id="@+id/cableInput"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="numberDecimal"
+        android:text="@string/zero"
+        android:textSize="18sp"
+        android:textColor="@color/lt_gray"
+        android:textStyle="bold"
+        android:hint="@string/cable_hint"
+        app:layout_constraintTop_toTopOf="@id/cable"
+        app:layout_constraintBottom_toBottomOf="@id/cable"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextHintStyle"/>
+
+    <EditText
+        android:id="@+id/otherInput"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="numberDecimal"
+        android:text="@string/zero"
+        android:textSize="18sp"
+        android:textColor="@color/lt_gray"
+        android:textStyle="bold"
+        android:hint="@string/apartment_hint"
+        app:layout_constraintTop_toTopOf="@id/other"
+        app:layout_constraintBottom_toBottomOf="@id/other"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextHintStyle"/>
+
+    <EditText
+        android:id="@+id/subscriptionsInput"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="numberDecimal"
+        android:text="@string/zero"
+        android:textSize="18sp"
+        android:textColor="@color/lt_gray"
+        android:textStyle="bold"
+        android:hint="@string/subscription_hint"
+        app:layout_constraintTop_toTopOf="@id/subscriptions"
+        app:layout_constraintBottom_toBottomOf="@id/subscriptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextHintStyle"/>
+
+    <EditText
+        android:id="@+id/groceriesInput"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="numberDecimal"
+        android:text="@string/zero"
+        android:textSize="18sp"
+        android:textColor="@color/lt_gray"
+        android:textStyle="bold"
+        android:hint="@string/groceries_hint"
+        app:layout_constraintTop_toTopOf="@id/groceries"
+        app:layout_constraintBottom_toBottomOf="@id/groceries"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextHintStyle"/>
+
+    <EditText
+        android:id="@+id/miscInput"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="50dp"
+        android:inputType="numberDecimal"
+        android:text="@string/zero"
+        android:textSize="18sp"
+        android:textColor="@color/lt_gray"
+        android:textStyle="bold"
+        android:hint="@string/misc_hint"
+        app:layout_constraintTop_toTopOf="@id/misc"
+        app:layout_constraintBottom_toBottomOf="@id/misc"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/EditTextHintStyle"/>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/dk_gray"
+        android:text="@string/calculate"
+        app:layout_constraintTop_toBottomOf="@id/misc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/total_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/total_text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculate" />
+
+    <TextView
+        android:id="@+id/totalOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/money_zero"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/sky"
+        app:layout_constraintStart_toEndOf="@id/total_text"
+        app:layout_constraintTop_toBottomOf="@id/calculate" />
+
+    <TextView
+        android:id="@+id/pp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="@string/per_person"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/total_text" />
+
+    <TextView
+        android:id="@+id/ppOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/money_zero"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/sky"
+        app:layout_constraintStart_toEndOf="@id/pp_text"
+        app:layout_constraintTop_toBottomOf="@id/total_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
